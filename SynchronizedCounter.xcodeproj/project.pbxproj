@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D25F4378FB88595955EB427 /* libPods-SynchronizedCounter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBBE77C14E4DEE067C2119F /* libPods-SynchronizedCounter.a */; };
 		D99D8F061D5E589800E9C279 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D99D8F051D5E589800E9C279 /* main.m */; };
 		D99D8F091D5E589800E9C279 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D99D8F081D5E589800E9C279 /* AppDelegate.m */; };
 		D99D8F0C1D5E589800E9C279 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D99D8F0B1D5E589800E9C279 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7CBBE77C14E4DEE067C2119F /* libPods-SynchronizedCounter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SynchronizedCounter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99D8F011D5E589800E9C279 /* SynchronizedCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SynchronizedCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99D8F051D5E589800E9C279 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D99D8F071D5E589800E9C279 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		D99D8F101D5E589800E9C279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99D8F131D5E589800E9C279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D99D8F151D5E589800E9C279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7907ADF53C34B0A115B449 /* Pods-SynchronizedCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SynchronizedCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SynchronizedCounter/Pods-SynchronizedCounter.release.xcconfig"; sourceTree = "<group>"; };
+		E68A52D270EB6F43F6B2F403 /* Pods-SynchronizedCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SynchronizedCounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SynchronizedCounter/Pods-SynchronizedCounter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D25F4378FB88595955EB427 /* libPods-SynchronizedCounter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		635E4EF2F8D70140ECAA9ECA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CBBE77C14E4DEE067C2119F /* libPods-SynchronizedCounter.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B8DE39163392D0CA355A564 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E68A52D270EB6F43F6B2F403 /* Pods-SynchronizedCounter.debug.xcconfig */,
+				DA7907ADF53C34B0A115B449 /* Pods-SynchronizedCounter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D99D8EF81D5E589800E9C279 = {
 			isa = PBXGroup;
 			children = (
 				D99D8F031D5E589800E9C279 /* SynchronizedCounter */,
 				D99D8F021D5E589800E9C279 /* Products */,
+				7B8DE39163392D0CA355A564 /* Pods */,
+				635E4EF2F8D70140ECAA9ECA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D99D8F181D5E589800E9C279 /* Build configuration list for PBXNativeTarget "SynchronizedCounter" */;
 			buildPhases = (
+				87F253B74B31D70C368FBAC2 /* [CP] Check Pods Manifest.lock */,
 				D99D8EFD1D5E589800E9C279 /* Sources */,
 				D99D8EFE1D5E589800E9C279 /* Frameworks */,
 				D99D8EFF1D5E589800E9C279 /* Resources */,
+				5EBA8E858D03DA0C7E636DE2 /* [CP] Embed Pods Frameworks */,
+				89CB50C9C830A4A17AF83AFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EBA8E858D03DA0C7E636DE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SynchronizedCounter/Pods-SynchronizedCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87F253B74B31D70C368FBAC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89CB50C9C830A4A17AF83AFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SynchronizedCounter/Pods-SynchronizedCounter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D99D8EFD1D5E589800E9C279 /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		D99D8F191D5E589800E9C279 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68A52D270EB6F43F6B2F403 /* Pods-SynchronizedCounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SynchronizedCounter/Info.plist;
@@ -274,6 +350,7 @@
 		};
 		D99D8F1A1D5E589800E9C279 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA7907ADF53C34B0A115B449 /* Pods-SynchronizedCounter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SynchronizedCounter/Info.plist;
@@ -302,6 +379,7 @@
 				D99D8F1A1D5E589800E9C279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

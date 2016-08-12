@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  SynchronizedCounter
+//  test
 //
-//  Created by David Ferreira on 12/08/16.
-//  Copyright © 2016 David Ferreira. All rights reserved.
+//  Created by David Miguel Vicente Ferreira on 11/08/16.
+//  Copyright © 2016 David Miguel Vicente Ferreira. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
